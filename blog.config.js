@@ -2,11 +2,11 @@
  * @type {import('@/types').BlogConfig}
  */
 const BLOG = {
-  title: 'chussum.dev',
+  title: 'Chussum',
   author: 'chussum',
   email: 'flosdor@gmail.com',
   link: 'https://chussum.dev',
-  description: 'Chussum',
+  description: 'harder better faster stronger',
   lang: 'ko-KR',
   appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
