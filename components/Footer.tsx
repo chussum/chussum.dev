@@ -24,7 +24,6 @@ const Footer: React.VFC<Props> = ({ fullWidth }) => {
           <p>
             © {BLOG.author} {from === y || !from ? y : `${from} - ${y}`}
           </p>
-          <Vercel />
         </div>
       </div>
     </div>

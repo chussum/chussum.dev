@@ -31,10 +31,10 @@ const tailwindConfig = {
         }
       },
       fontFamily: {
-        sans: ['"IBM Plex Sans"', ...fontSansCJK, ...fontFamily.sans],
-        serif: ['"Source Serif"', ...fontSerifCJK, ...fontFamily.serif],
+        sans: ['"Pretendard"', ...fontSansCJK, ...fontFamily.sans],
+        serif: ['"Pretendard"', ...fontSerifCJK, ...fontFamily.serif],
         noEmoji: [
-          '"IBM Plex Sans"',
+          '"Pretendard"',
           'ui-sans-serif',
           'system-ui',
           '-apple-system',

@@ -68,6 +68,11 @@ class MyDocument extends Document {
               <link
                 rel="preload"
                 as="style"
+                href={`https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css`}
+              />
+              <link
+                rel="preload"
+                as="style"
                 href={`https://fonts.googleapis.com/css2?family=Noto+${
                   BLOG.font === 'serif' ? 'Serif' : 'Sans'
                 }+${CJK()}:wght@400;500;700&display=swap`}
