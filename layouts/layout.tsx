@@ -47,7 +47,7 @@ const Layout: React.VFC<Props> = ({
         </h1>
         {post?.type?.[0] !== 'Page' && (
           <nav className="flex mt-7 items-start text-gray-500 dark:text-gray-400">
-            <div className="flex mb-4">
+            <div className="flex mb-4 leading-6">
               <a href={BLOG.socialLink || '#'} className="flex" target="_blank" rel="noreferrer">
                 <Image
                   alt={BLOG.author}
