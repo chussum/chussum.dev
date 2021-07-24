@@ -16,7 +16,7 @@
 
 - Star this repo 😉
 - Duplicate [this Notion template](https://www.notion.so/68be9021bca34b8e89f0246f27e608df), and share it to the public
-- [Fork](https://github.com/craigary/nobelium/fork) this project
+- [Fork](https://github.com/chussum/chussum.dev/fork) this project
 - Customize `blog.config.js`
 - _(Optional)_ Replace `favicon.svg`, and `favicon.ico` in `/public` folder with your own
 - Deploy on [Vercel](https://vercel.com), set following environment variables：
