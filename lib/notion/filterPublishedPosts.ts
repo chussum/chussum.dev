@@ -5,6 +5,11 @@ const tomorrow = new Date(current)
 tomorrow.setDate(tomorrow.getDate() + 1)
 tomorrow.setHours(0, 0, 0, 0)
 
+const STATUS = {
+  PREVIEW: 'Preview',
+  PUBLISHED: 'Published'
+} as const;
+
 type Props = {
   posts: Post[] | null
   includedPages: boolean
@@ -20,7 +25,8 @@ export const filterPublishedPosts = ({ posts, includedPages, includedPreview }: 
     )
     .filter(post => {
       const postDate = new Date(post?.date?.start_date || post.createdTime)
-      const published = includedPreview ? ['Preview', 'Published'].includes(String(post?.status?.[0])) : ['Published'].includes(String(post?.status?.[0]))
+      const postStatus = post?.status?.[0];
+      const published = includedPreview ? (postStatus === STATUS.PREVIEW || postStatus === STATUS.PUBLISHED) : postStatus === STATUS.PUBLISHED
       return (
         published &&
         post.title &&
