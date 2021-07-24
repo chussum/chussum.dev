@@ -63,7 +63,7 @@ const Layout: React.VFC<Props> = ({
             <div className="mr-2 mb-4 md:ml-0">
               {formatDate(
                 post?.date?.start_date || post.createdTime,
-                BLOG.lang
+                BLOG.dateLang || BLOG.lang
               )}
             </div>
             {post.tags && (

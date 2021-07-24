@@ -19,7 +19,7 @@ const BlogPost: React.VFC<Props> = ({ post }) => {
           </a>
         </Link>
         <time className="flex-shrink-0 text-gray-600 dark:text-gray-400">
-          {formatDate(post?.date?.start_date || post.createdTime, BLOG.lang)}
+          {formatDate(post?.date?.start_date || post.createdTime, BLOG.dateLang || BLOG.lang)}
         </time>
       </header>
       <main>

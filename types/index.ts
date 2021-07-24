@@ -29,6 +29,7 @@ export type BlogConfig = {
   link: string
   description: string
   lang: 'en-US' | 'zh-CN' | 'zh-HK' | 'zh-TW' | 'ja-JP'
+  dateLang: 'en-US' | 'zh-CN' | 'zh-HK' | 'zh-TW' | 'ja-JP'
   appearance: 'auto' | 'dark' | 'light'
   font: 'sans-serif' | 'serif'
   lightBackground: `#${string}`

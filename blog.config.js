@@ -8,6 +8,7 @@ const BLOG = {
   link: 'https://chussum.dev',
   description: '바다를 갈망하는 우물 속 개구리',
   lang: 'ko-KR',
+  dateLang: 'en-US', // 'en-US' | 'zh-CN' | 'zh-HK' | 'zh-TW' | 'ja-JP'
   appearance: 'dark', // ['light', 'dark', 'auto'],
   font: 'sans-serif', // ['sans-serif', 'serif']
   lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
