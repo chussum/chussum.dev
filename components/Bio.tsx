@@ -24,7 +24,7 @@ const Bio = () => {
             </Link>
             <div className="author-introduction">{BLOG.description}</div>
             <p className="author-socials">
-              <a href="https://github.com/chussum/chussum.dev" target="_blank" rel="noreferrer">
+              <a href="https://github.com/chussum" target="_blank" rel="noreferrer">
                 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&amp;logo=GitHub&amp;logoColor=white" />
               </a>
             </p>
