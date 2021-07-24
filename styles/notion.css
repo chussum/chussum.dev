@@ -74,6 +74,7 @@ svg + .notion-page-title-text {
 }
 .notion-asset-caption {
   @apply text-center;
+  @apply text-gray-900 dark:text-gray-200;
 }
 .notion-full-width {
   @apply px-0;
