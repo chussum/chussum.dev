@@ -18,12 +18,12 @@ const BlogPost: React.VFC<Props> = ({ post }) => {
             </h2>
           </a>
         </Link>
-        <time className="flex-shrink-0 text-gray-600 dark:text-gray-400">
+        <time className="flex-shrink-0 text-gray-600 dark:text-gray-400 text-sm">
           {formatDate(post?.date?.start_date || post.createdTime, BLOG.dateLang || BLOG.lang)}
         </time>
       </header>
       <main>
-        <p className="hidden md:block leading-8 text-gray-700 dark:text-gray-300">
+        <p className="hidden md:block leading-8 text-gray-700 dark:text-gray-400">
           <Link href={`${BLOG.path}/${post.slug}`}>
             <a>
               {post.summary}

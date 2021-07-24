@@ -60,7 +60,7 @@ const Layout: React.VFC<Props> = ({
               </a>
               <span className="block">&nbsp;/&nbsp;</span>
             </div>
-            <div className="mr-2 mb-4 md:ml-0">
+            <div className="mr-2 mb-4 md:ml-0 text-sm leading-6">
               {formatDate(
                 post?.date?.start_date || post.createdTime,
                 BLOG.dateLang || BLOG.lang
