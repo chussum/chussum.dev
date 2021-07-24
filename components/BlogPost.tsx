@@ -23,7 +23,7 @@ const BlogPost: React.VFC<Props> = ({ post }) => {
         </time>
       </header>
       <main>
-        <p className="hidden md:block leading-8 text-gray-700 dark:text-gray-400">
+        <p className="hidden md:block leading-7 text-gray-700 dark:text-gray-400">
           <Link href={`${BLOG.path}/${post.slug}`}>
             <a>
               {post.summary}
