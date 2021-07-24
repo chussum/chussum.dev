@@ -59,7 +59,7 @@ const Container: React.VFC<Props> = ({
           property="og:image"
           content={`https://og-image-craigary.vercel.app/${encodeURIComponent(
             meta.title
-          )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fnobelium.vercel.app%2Flogo-for-dark-bg.svg`}
+          )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fchussum.dev%2Flogo-for-dark-bg.svg`}
         />
         <meta property="og:type" content={meta.type} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -67,7 +67,7 @@ const Container: React.VFC<Props> = ({
         <meta name="twitter:title" content={meta.title} />
         <meta
           name="twitter:image"
-          content={`https://og-image-craigary.vercel.app/${meta.title}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fnobelium.vercel.app%2Flogo-for-dark-bg.svg`}
+          content={`https://og-image-craigary.vercel.app/${meta.title}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fchussum.dev%2Flogo-for-dark-bg.svg`}
         />
         {meta.type === 'article' && (
           <>
