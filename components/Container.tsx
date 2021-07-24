@@ -32,7 +32,7 @@ const Container: React.VFC<Props> = ({
     ...customMeta
   }
   return (
-    <div>
+    <>
       <Head>
         <title>{meta.title}</title>
         <meta content={BLOG.darkBackground} name="theme-color" />
@@ -99,7 +99,7 @@ const Container: React.VFC<Props> = ({
         </main>
         <Footer fullWidth={fullWidth} />
       </div>
-    </div>
+    </>
   )
 }
 

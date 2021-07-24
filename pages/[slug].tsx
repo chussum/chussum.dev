@@ -32,14 +32,12 @@ type Props = Omit<React.ComponentProps<typeof Layout>, 'fullWidth'>
 const BlogPost: NextPage<Props> = ({ post, blockMap, emailHash }) => {
   if (!post) return null
   return (
-    <>
-      <Layout
-        blockMap={blockMap}
-        post={post}
-        emailHash={emailHash}
-        fullWidth={post?.fullWidth ?? false}
-      />
-    </>
+    <Layout
+      blockMap={blockMap}
+      post={post}
+      emailHash={emailHash}
+      fullWidth={post?.fullWidth ?? false}
+    />
   )
 }
 
