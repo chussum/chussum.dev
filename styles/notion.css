@@ -12,6 +12,15 @@
   @apply p-0;
   @apply my-3;
 }
+
+.notion-text {
+  @apply leading-7;
+}
+
+.notion-blank {
+  @apply leading-3;
+}
+
 .notion-page-link {
   color: inherit;
 }
@@ -43,8 +52,8 @@ svg + .notion-page-title-text {
   @apply text-gray-900;
 }
 
-pre[class*='language-'] {
-  line-height: inherit;
+pre[class*="language-"] {
+  @apply leading-6;
 }
 
 .notion-bookmark:hover {
