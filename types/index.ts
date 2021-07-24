@@ -3,7 +3,7 @@ import type { ReactCusdis } from 'react-cusdis'
 
 export type PostType = 'Post' | 'Page'
 
-export type PostStatus = 'Idea' | 'Published' | 'Revise' | 'Published'
+export type PostStatus = 'Idea' | 'Draft' | 'Preview' | 'Published'
 
 export type Post = {
   id: string
@@ -18,6 +18,7 @@ export type Post = {
   }
   status?: [PostStatus]
   type?: [PostType]
+  comment: 'Yes' | 'No';
 }
 
 export type TagObj = { [key: string]: 1 }

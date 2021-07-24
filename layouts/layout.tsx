@@ -110,7 +110,7 @@ const Layout: React.VFC<Props> = ({
           ↑ {locale?.POST.TOP}
         </button>
       </div>
-      {post?.type?.[0] === 'Post' && <Comment post={post} />}
+      {post?.comment === 'Yes' && <Comment post={post} />}
     </Container>
   )
 }

@@ -5,9 +5,9 @@ import BLOG from '@/blog.config'
 import { createHash } from 'crypto'
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const posts = await getAllPosts({ includedPages: true })
+  const posts = await getAllPosts({ includedPages: true, includedPreview: true })
   if (!posts) return { paths: [], fallback: false }
-  const publishPosts = posts.filter(post => post?.status?.[0] === 'Published')
+  const publishPosts = posts.filter(post => ['Preview', 'Published'].includes(String(post?.status?.[0])))
   return {
     paths: publishPosts.map(row => `${BLOG.path}/${row.slug}`),
     fallback: true
@@ -16,7 +16,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async context => {
   const slug = context.params?.slug
-  const posts = await getAllPosts({ includedPages: true })
+  const posts = await getAllPosts({ includedPages: true, includedPreview: true })
   const post = posts.find(t => t.slug === slug)
   if (!post?.id) return { notFound: true }
   const blockMap = await getPostBlocks(post.id)
