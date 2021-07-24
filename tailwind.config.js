@@ -31,8 +31,8 @@ const tailwindConfig = {
         }
       },
       fontFamily: {
-        sans: ['"Pretendard"', ...fontSansCJK, ...fontFamily.sans],
-        serif: ['"Pretendard"', ...fontSerifCJK, ...fontFamily.serif],
+        sans: ['"Pretendard"', '"IBM Plex Sans"', ...fontSansCJK, ...fontFamily.sans],
+        serif: ['"Pretendard"', '"Source Serif"', ...fontSerifCJK, ...fontFamily.serif],
         noEmoji: [
           '"Pretendard"',
           'ui-sans-serif',
