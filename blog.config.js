@@ -39,7 +39,7 @@ const BLOG = {
   },
   comment: {
     // support provider: utterances, cusdis
-    provider: '', // leave it empty if you don't need any comment plugin
+    provider: 'utterances', // leave it empty if you don't need any comment plugin
     utterancesConfig: {
       repo: 'chussum/chussum.dev'
     },
