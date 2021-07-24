@@ -12,6 +12,11 @@
   @apply my-3;
 }
 
+.notion-hr {
+  height: 1px;
+  @apply bg-gray-600 dark:bg-gray-700;
+}
+
 .notion-quote,
 .notion-h-title {
   @apply leading-8;
