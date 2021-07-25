@@ -35,6 +35,7 @@ const Layout: React.VFC<Props> = ({
   return (
     <Container
       layout="blog"
+      slug={post.slug}
       title={post.title}
       description={post.summary}
       // date={new Date(post.publishedAt).toISOString()}
