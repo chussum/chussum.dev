@@ -12,6 +12,7 @@ const Bio = () => {
             alt={BLOG.author}
             width={80}
             height={80}
+            quality={100}
             src={`https://gravatar.com/avatar/dab63285ac3cf1d771ad62df4f853f84`}
             className="rounded-full"
           />
