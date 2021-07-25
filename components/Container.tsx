@@ -57,8 +57,8 @@ const Container: React.VFC<Props> = ({
         />
         <meta
           property="og:image"
-          content={`https://og-image-craigary.vercel.app/${encodeURIComponent(
-            BLOG.title
+          content={`https://og-image-chussum.vercel.app/${encodeURIComponent(
+            meta.title
           )}.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fchussum.dev%2Flogo-for-dark-bg.svg`}
         />
         <meta property="og:type" content={meta.type} />
